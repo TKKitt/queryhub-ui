@@ -1,0 +1,50 @@
+.Profile {
+    text-align: center;
+}
+
+.Profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.Profile-email {
+    font-size: 24px;
+    color: #333;
+}
+
+.Profile-bio {
+    font-size: 16px;
+    color: #666;
+}
+
+.Profile-createdAt {
+    font-size: 14px;
+    color: #999;
+}
+
+.profile-dropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 3px;
+}
+
+.dropdown-menu-dark {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.dropdown-menu-dark .dropdown-item {
+    color: #fff;
+}
+
+.dropdown-menu-dark .dropdown-item:hover,
+.dropdown-menu-dark .dropdown-item:focus {
+    color: #fff;
+    background-color: #495057;
+}
+
+.no-resize {
+    resize: none;
+}
