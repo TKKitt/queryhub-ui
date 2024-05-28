@@ -3,7 +3,10 @@ import axios from "axios";
 const getAllPosts = async () => {
   try {
     const response = await axios.get(
-      `${process.env.REACT_APP_API_BASE_URL}/posts`
+      `${process.env.REACT_APP_API_BASE_URL}/posts`,
+      {
+        withCredentials: true,
+      }
     );
     return response.data;
   } catch (error) {
@@ -16,7 +19,10 @@ const getAllPosts = async () => {
 const getPostById = async (postId) => {
   try {
     const response = await axios.get(
-      `${process.env.REACT_APP_API_BASE_URL}/posts/${postId}`
+      `${process.env.REACT_APP_API_BASE_URL}/posts/${postId}`,
+      {
+        withCredentials: true,
+      }
     );
     return response.data;
   } catch (error) {
@@ -28,7 +34,10 @@ const getPostById = async (postId) => {
 const getPostsByAuthorId = async (authorId) => {
   try {
     const response = await axios.get(
-      `${process.env.REACT_APP_API_BASE_URL}/posts/author/${authorId}`
+      `${process.env.REACT_APP_API_BASE_URL}/posts/author/${authorId}`,
+      {
+        withCredentials: true,
+      }
     );
     return response.data;
   } catch (error) {
