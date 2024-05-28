@@ -3,7 +3,10 @@ import axios from "axios";
 const getCommentsByPostId = async (postId) => {
   try {
     const response = await axios.get(
-      `${process.env.REACT_APP_API_BASE_URL}/comments/post/${postId}`
+      `${process.env.REACT_APP_API_BASE_URL}/comments/post/${postId}`,
+      {
+        withCredentials: true,
+      }
     );
     console.log(response.data);
     return response.data;

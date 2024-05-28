@@ -3,7 +3,10 @@ import axios from "axios";
 const getUserById = async (userId) => {
   try {
     const response = await axios.get(
-      `${process.env.REACT_APP_API_BASE_URL}/users/${userId}`
+      `${process.env.REACT_APP_API_BASE_URL}/users/${userId}`,
+      {
+        withCredentials: true,
+      }
     );
     return response.data;
   } catch (error) {
