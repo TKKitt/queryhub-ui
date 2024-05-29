@@ -30,10 +30,7 @@ const updateUser = async (user, userId) => {
       {
         withCredentials: true,
         headers: {
-          withCredentials: true,
-          headers: {
-            "Content-Type": "multipart/form-data",
-          },
+          "Content-Type": "multipart/form-data",
         },
       }
     );
